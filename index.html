@@ -3,144 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>XOLƎRIƆ</title>
+    <title>XOLƎRIƆ | XOLERIC</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#131314">
     <link rel="apple-touch-icon" href="https://i.ibb.co/7tD0Kn5K/logo.png">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-
-        :root {
-            --bg-color: #131314;
-            --card-bg: #1E1F20;
-            --text-main: #E3E3E3;
-            --text-muted: #8E8EA0;
-            --accent: #FFFFFF;
-        }
-
-        body, html {
-            margin: 0; padding: 0;
-            width: 100%; height: 100%;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Outfit', sans-serif;
-            overflow: hidden;
-            user-select: none;
-            -webkit-user-select: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .screen {
-            width: 100%; height: 100%;
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            position: absolute;
-            top: 0; left: 0;
-            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        /* --- SETUP EKRANI --- */
-        #setupScreen {
-            z-index: 10;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 40px 30px;
-            border-radius: 24px;
-            text-align: center;
-            width: 85%;
-            max-width: 340px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .logo-title {
-            font-weight: 600;
-            font-size: 28px;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            color: var(--accent);
-        }
-
-        input {
-            width: 100%; box-sizing: border-box;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--text-main);
-            padding: 16px; font-size: 16px;
-            border-radius: 12px; margin-bottom: 16px;
-            text-align: center; outline: none;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-
-        input:focus { 
-            border-color: rgba(255, 255, 255, 0.4); 
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        .btn {
-            background: var(--text-main);
-            color: var(--bg-color);
-            border: none; width: 100%;
-            padding: 16px; font-size: 18px; font-weight: 600;
-            border-radius: 12px; cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
-            margin-top: 10px;
-        }
-
-        .btn:active { transform: scale(0.97); background: #ffffff; }
-
-        /* --- ASOSIY EKRAN --- */
-        #mainScreen {
-            display: none; opacity: 0; transform: scale(0.95);
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .progress-container {
-            position: relative;
-            width: 320px; height: 320px;
-            display: flex; justify-content: center; align-items: center;
-        }
-
-        .progress-ring { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
-        .progress-ring__bg { stroke: #2A2B2E; stroke-width: 4; fill: transparent; }
-        .progress-ring__circle {
-            stroke: var(--accent); stroke-width: 4; fill: transparent;
-            stroke-dasharray: 879; /* 2 * PI * 140 */
-            stroke-dashoffset: 879;
-            transition: stroke-dashoffset 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            stroke-linecap: round;
-        }
-
-        .inner-text { text-align: center; z-index: 2; pointer-events: none; transition: transform 0.1s; }
-        .count-number { font-size: 80px; font-weight: 600; line-height: 1; margin: 0; color: var(--accent); }
-        .word-display { font-size: 22px; font-weight: 300; color: var(--text-muted); margin-top: 8px; }
-        .target-text { font-size: 14px; color: #555; margin-top: 12px; letter-spacing: 1px; }
-
-        .top-controls {
-            position: absolute; top: 30px;
-            width: 100%; display: flex;
-            justify-content: space-between; padding: 0 30px;
-            box-sizing: border-box; z-index: 100;
-        }
-
-        .icon-btn {
-            background: transparent; border: none;
-            color: var(--text-muted); font-size: 14px; cursor: pointer;
-            padding: 10px; border-radius: 8px;
-            transition: color 0.3s; font-family: inherit; font-weight: 600;
-        }
-        
-        .icon-btn:hover { color: var(--accent); }
-
-        #installBtn { display: none; margin-top: 15px; background: transparent; border: 1px solid var(--text-muted); color: var(--text-main); }
-    </style>
+    
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="description" content="Idea — XOLERIC kreativ veb-tajribasi: interaktiv dizayn, jonli demo va ochiq manba. Rasmiy portfolio orqali bog'laning.">
+<link rel="canonical" href="https://xolerc.github.io/Idea/">
+<meta name="author" content="XOLERIC">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="XOLERIC">
+<meta property="og:title" content="XOLƎRIƆ | XOLERIC">
+<meta property="og:description" content="Idea — XOLERIC kreativ veb-tajribasi: interaktiv dizayn, jonli demo va ochiq manba. Rasmiy portfolio orqali bog">
+<meta property="og:url" content="https://xolerc.github.io/Idea/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Idea","author":{"@type":"Person","name":"XOLERIC","url":"https://xolerc.github.io/mydrime/"},"url":"https://xolerc.github.io/Idea/","sameAs":["https://xolerc.github.io/mydrime/","https://github.com/xolerc/Idea"]}
+</script>
 </head>
 <body>
 
@@ -174,126 +55,7 @@
         </div>
     </div>
 
-    <script>
-        let count = 0;
-        let target = 1000;
-        let activeWord = "";
-        const circle = document.getElementById('progressCircle');
-        const radius = circle.r.baseVal.value;
-        const circumference = radius * 2 * Math.PI;
-
-        circle.style.strokeDasharray = `${circumference} ${circumference}`;
-        circle.style.strokeDashoffset = circumference;
-
-        function setProgress(percent) {
-            const offset = circumference - (percent / 100) * circumference;
-            circle.style.strokeDashoffset = offset;
-        }
-
-        function startProApp() {
-            const wordVal = document.getElementById('wordInput').value.trim();
-            const targetVal = document.getElementById('targetInput').value;
-
-            if (!wordVal || !targetVal) return;
-
-            activeWord = wordVal;
-            target = parseInt(targetVal);
-            count = 0;
-
-            let setup = document.getElementById('setupScreen');
-            let main = document.getElementById('mainScreen');
-
-            setup.style.opacity = '0';
-            setup.style.transform = 'scale(1.05)';
-            
-            setTimeout(() => {
-                setup.style.display = 'none';
-                main.style.display = 'flex';
-                // Trigger reflow
-                void main.offsetWidth;
-                main.style.opacity = '1';
-                main.style.transform = 'scale(1)';
-            }, 400);
-
-            document.getElementById('proWord').textContent = activeWord;
-            updateDisplay();
-        }
-
-        function incrementPro() {
-            if (count < target) {
-                count++;
-                updateDisplay();
-
-                if (navigator.vibrate) navigator.vibrate(10);
-
-                const innerText = document.querySelector('.inner-text');
-                innerText.style.transform = 'scale(1.03)';
-                setTimeout(() => innerText.style.transform = 'scale(1)', 100);
-
-                if (count === target) {
-                    if (navigator.vibrate) navigator.vibrate([50, 50, 100]);
-                }
-            }
-        }
-
-        function updateDisplay() {
-            document.getElementById('proNumber').textContent = count;
-            document.getElementById('proTarget').textContent = `${count} / ${target}`;
-            let percentage = (count / target) * 100;
-            setProgress(percentage);
-        }
-
-        function resetApp(event) {
-            event.stopPropagation();
-            let setup = document.getElementById('setupScreen');
-            let main = document.getElementById('mainScreen');
-
-            main.style.opacity = '0';
-            main.style.transform = 'scale(0.95)';
-            
-            setTimeout(() => {
-                main.style.display = 'none';
-                setup.style.display = 'flex';
-                void setup.offsetWidth;
-                setup.style.opacity = '1';
-                setup.style.transform = 'scale(1)';
-                
-                count = 0;
-                setProgress(0);
-                document.getElementById('wordInput').value = '';
-                document.getElementById('targetInput').value = '';
-            }, 400);
-        }
-
-        // PWA o'rnatish logikasi
-        let deferredPrompt;
-        const installBtn = document.getElementById('installBtn');
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installBtn.style.display = 'block';
-        });
-
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    installBtn.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        // Service Worker ro'yxatdan o'tkazish
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').then(reg => {
-                    console.log('SW ro\'yxatdan o\'tdi:', reg);
-                }).catch(err => console.log('SW xatosi:', err));
-            });
-        }
-    </script>
+    
+<script src="assets/js/app.js" defer></script>
 </body>
 </html>

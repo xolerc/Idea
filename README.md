@@ -11,3 +11,6 @@ A simple PWA counter/tracker app. Set a word and a target number, then tap to in
 
 ## How to open
 Open `index.html` in any modern browser. Can be installed as a PWA.
+
+## 🔗 Rasmiy portfolio
+Barcha XOLERIC loyihalari: **https://xolerc.github.io/mydrime/**
